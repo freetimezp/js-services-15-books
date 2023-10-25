@@ -1,5 +1,19 @@
 /*=============== SEARCH ===============*/
+const searchButton = document.getElementById('search-button');
+const searchClose = document.getElementById('search-close');
+const searchContent = document.getElementById('search-content');
 
+if (searchButton) {
+    searchButton.addEventListener('click', () => {
+        searchContent.classList.add('show-search');
+    });
+};
+
+if (searchClose) {
+    searchClose.addEventListener('click', () => {
+        searchContent.classList.remove('show-search');
+    });
+};
 
 /*=============== LOGIN ===============*/
 
@@ -19,13 +33,13 @@
 /*=============== TESTIMONIAL SWIPER ===============*/
 
 
-/*=============== SHOW SCROLL UP ===============*/ 
+/*=============== SHOW SCROLL UP ===============*/
 
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 
-/*=============== DARK LIGHT THEME ===============*/ 
+/*=============== DARK LIGHT THEME ===============*/
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
