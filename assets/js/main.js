@@ -16,7 +16,21 @@ if (searchClose) {
 };
 
 /*=============== LOGIN ===============*/
+const loginButton = document.getElementById('login-button');
+const loginClose = document.getElementById('login-close');
+const loginontent = document.getElementById('login-content');
 
+if (loginButton) {
+    loginButton.addEventListener('click', () => {
+        loginontent.classList.add('show-login');
+    });
+};
+
+if (loginClose) {
+    loginClose.addEventListener('click', () => {
+        loginontent.classList.remove('show-login');
+    });
+};
 
 /*=============== ADD SHADOW HEADER ===============*/
 
