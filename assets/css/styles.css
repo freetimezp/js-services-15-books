@@ -225,7 +225,9 @@ img {
 }
 
 /* Active link */
-
+.active-link {
+  color: rgb(60, 3, 71);
+}
 
 /*=============== SEARCH ===============*/
 .search {
