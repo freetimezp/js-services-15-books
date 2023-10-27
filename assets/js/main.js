@@ -105,7 +105,12 @@ let swiperTestimonial = new Swiper('.testimonial__swiper', {
 });
 
 /*=============== SHOW SCROLL UP ===============*/
+const scrollUp = () => {
+    const scrollup = document.getElementById('scroll-up');
+    this.scrollY >= 350 ? scrollup.classList.add('show-scroll') : scrollup.classList.remove('show-scroll');
+};
 
+window.addEventListener('scroll', scrollUp);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
